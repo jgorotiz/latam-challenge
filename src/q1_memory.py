@@ -4,7 +4,7 @@ import json
 from collections import Counter,defaultdict
 
 def leer_tweets(file_path):
-    """Generador que lee y devuelve un tweet a la vez."""
+    # lee y devuelve un tweet a la vez
     with open(file_path, 'r') as file:
         for line in file:
             yield json.loads(line)
